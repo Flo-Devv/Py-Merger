@@ -14,15 +14,14 @@
 <p/>
 
 ### How does it work?:
-• First import your excel files (multiple selection is allowed).
+• First import your excel files (multiple selection is allowed), all sheets of the imported files are automatically placed in the right column.
 <p>
   <img width="375" alt="image" src="https://user-images.githubusercontent.com/123277348/220212359-cec09600-93e1-4b94-8b71-44c31a957d94.png">
 </p>
 
-
-• More features coming 
+• Choose your base i.e. the sheet whose data needs to be updated but which will serve as a template (the order of the columns will be copied).
 <p>
-  <img width="240" alt="image" src="https://user-images.githubusercontent.com/123277348/213897162-1016d3a7-6ae1-489e-946a-df3d1dc0c8cd.png">
+  <img width="350" alt="image" src="https://user-images.githubusercontent.com/123277348/220213179-def39970-a86a-46e0-9809-7562e95fa30c.png">
 <p/>
 
 
