@@ -34,4 +34,9 @@
   <img width="375" alt="image" src="https://user-images.githubusercontent.com/123277348/220214108-7220a3f5-9a8f-4476-a669-923239f82920.png">
 <p/>
 
+• Finally click on "Merge" and the magic happens: a window asks you to save as, then choose the name and the finished file is created! 
+<p>
+  <img width="375" alt="image" src="https://user-images.githubusercontent.com/123277348/220214455-9cb662d8-bc4b-42b3-8a9f-009f6b5ce88f.png">
+<p/>
+
 
