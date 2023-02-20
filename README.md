@@ -10,7 +10,7 @@
 <p/>
 • 1-click file access
 <p>
-  <img width="375" alt="image" src="https://user-images.githubusercontent.com/123277348/220211986-8ef569c6-aa6f-44a3-81f2-e71a97cc99e8.png">
+  <img width="370" alt="image" src="https://user-images.githubusercontent.com/123277348/220211986-8ef569c6-aa6f-44a3-81f2-e71a97cc99e8.png">
 <p/>
 • Realtime output if executed from the command prompt (python script only)
 
