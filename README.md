@@ -2,7 +2,7 @@
 ### Features:
 • Clean/Optimized UI
 <p>
-  <img width="444" alt="image" src="https://user-images.githubusercontent.com/123277348/220210475-34c60100-f946-43ce-8fdd-8545aa1f09eb.png">
+  <img width="375" alt="image" src="https://user-images.githubusercontent.com/123277348/220210608-1f3a4a16-dcf8-4cfc-9644-23dbbc6eae74.png">
 <p/>
 • Realtime requests to get modules description
 <p align="left">
