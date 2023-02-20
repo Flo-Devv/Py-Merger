@@ -12,7 +12,13 @@
 <p>
   <img width="370" alt="image" src="https://user-images.githubusercontent.com/123277348/220211986-8ef569c6-aa6f-44a3-81f2-e71a97cc99e8.png">
 <p/>
-• Realtime output if executed from the command prompt (python script only)
+
+### How does it work?:
+• First import your excel files (multiple selection is allowed).
+<p>
+  <img width="1017" alt="image" src="https://user-images.githubusercontent.com/123277348/220212359-cec09600-93e1-4b94-8b71-44c31a957d94.png">
+</p>
+
 
 • More features coming 
 <p>
