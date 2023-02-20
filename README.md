@@ -39,4 +39,12 @@
   <img width="375" alt="image" src="https://user-images.githubusercontent.com/123277348/220214455-9cb662d8-bc4b-42b3-8a9f-009f6b5ce88f.png">
 <p/>
 
-###Here is the result:
+### Result:
+
+• Original file (base):
+<p>
+  <img width="502" alt="image" src="https://user-images.githubusercontent.com/123277348/220214829-6a582c5e-15d9-4a60-91ef-24be5f4f77a3.png">
+</p>
+• Updates files (updates):
+<p>
+  
