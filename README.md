@@ -21,7 +21,7 @@
 
 • Choose your base i.e. the sheet whose data needs to be updated but which will serve as a template (the order of the columns will be copied).
 <p>
-  <img width="350" alt="image" src="https://user-images.githubusercontent.com/123277348/220213179-def39970-a86a-46e0-9809-7562e95fa30c.png">
+  <img width="375" alt="image" src="https://user-images.githubusercontent.com/123277348/220213179-def39970-a86a-46e0-9809-7562e95fa30c.png">
 <p/>
 
 
