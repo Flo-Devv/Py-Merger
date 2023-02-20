@@ -1,4 +1,4 @@
-# Py-Merger: Excel tool to merge smartly sheets ([latest release](https://github.com/FIo-dev/PIP-Manager/releases/tag/r1.0-beta))
+# Py-Merger: Excel tool to merge smartly sheets ([latest release](https://github.com/FIo-dev/Py-Merger/releases/tag/r1.0-beta))
 ### Features:
 • Clean/Optimized UI
 <p>
