@@ -6,7 +6,7 @@
 <p/>
 • Hints at button hovering
 <p align="left">
-  <img width="200" alt="image" src="https://user-images.githubusercontent.com/123277348/220211035-3e93cc68-321d-41e9-92d9-97810ea8b159.png">
+  <img width="375" alt="image" src="https://user-images.githubusercontent.com/123277348/220211035-3e93cc68-321d-41e9-92d9-97810ea8b159.png">
 <p/>
 • Install context menu
 <p>
