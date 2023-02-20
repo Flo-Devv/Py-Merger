@@ -13,6 +13,11 @@
   <img width="370" alt="image" src="https://user-images.githubusercontent.com/123277348/220211986-8ef569c6-aa6f-44a3-81f2-e71a97cc99e8.png">
 <p/>
 
+• Resizable UI
+<p>
+  <img width="375" alt="image" src="https://user-images.githubusercontent.com/123277348/220213464-9cae1cc1-3f08-4bf4-b057-f3e8b08f3df9.png">
+<p/>
+
 ### How does it work?:
 • First import your excel files (multiple selection is allowed), all sheets of the imported files are automatically placed in the right column.
 <p>
