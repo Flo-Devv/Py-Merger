@@ -16,7 +16,7 @@
 ### How does it work?:
 • First import your excel files (multiple selection is allowed).
 <p>
-  <img width="370" alt="image" src="https://user-images.githubusercontent.com/123277348/220212359-cec09600-93e1-4b94-8b71-44c31a957d94.png">
+  <img width="375" alt="image" src="https://user-images.githubusercontent.com/123277348/220212359-cec09600-93e1-4b94-8b71-44c31a957d94.png">
 </p>
 
 
