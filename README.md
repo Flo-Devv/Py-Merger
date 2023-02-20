@@ -4,11 +4,9 @@
 <p>
   <img width="375" alt="image" src="https://user-images.githubusercontent.com/123277348/220210608-1f3a4a16-dcf8-4cfc-9644-23dbbc6eae74.png">
 <p/>
-• Realtime requests to get modules description
+• Hints at button hovering
 <p align="left">
-  
-  <img width="140" alt="image" src="https://user-images.githubusercontent.com/123277348/213896935-b5f513f7-503b-4292-99e1-4452e6c36962.png">
-  <img width="144" alt="image" src="https://user-images.githubusercontent.com/123277348/213896936-f39b6223-0b51-458c-975f-6fd2ddafa431.png">
+  <img width="200" alt="image" src="https://user-images.githubusercontent.com/123277348/220211035-3e93cc68-321d-41e9-92d9-97810ea8b159.png">
 <p/>
 • Install context menu
 <p>
@@ -20,3 +18,44 @@
 <p>
   <img width="240" alt="image" src="https://user-images.githubusercontent.com/123277348/213897162-1016d3a7-6ae1-489e-946a-df3d1dc0c8cd.png">
 <p/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
