@@ -8,9 +8,9 @@
 <p align="left">
   <img width="375" alt="image" src="https://user-images.githubusercontent.com/123277348/220211035-3e93cc68-321d-41e9-92d9-97810ea8b159.png">
 <p/>
-• Install context menu
+• 1-click file access
 <p>
-  <img width="250" alt="image" src="https://user-images.githubusercontent.com/123277348/213897045-943bfefe-5c7c-4707-be71-b62b1c05dfe2.png">
+  <img width="784" alt="image" src="https://user-images.githubusercontent.com/123277348/220211986-8ef569c6-aa6f-44a3-81f2-e71a97cc99e8.png">
 <p/>
 • Realtime output if executed from the command prompt (python script only)
 
