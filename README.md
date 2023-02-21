@@ -60,9 +60,10 @@
 </p>
 
 ### Known limitations:
-<p>
-• The name of the columns must be in the first line in each worksheet <br>
--> Possible solution: add a selector to choose the right title line
+• The name of the columns must be in the first line in each worksheet. <br>
+-> Possible solution: add a selector to choose the right title line.
   
-• The structure of the worksheet should be as follows: first column identifier, next columns characteristics specific to the identifier.
+• The structure of the worksheet should be as follows: first column identifier, next columns characteristics specific to the identifier. <br>
+-> Possible solution: add a selector to choose the right identifier column.
+  
 <i> Please enjoy my work and do not hesitate to send me your feedback </i>
