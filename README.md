@@ -49,6 +49,6 @@
 
 <p>
   <img width="500" alt="image" src="https://user-images.githubusercontent.com/123277348/220215078-03d1d611-9dd2-44cf-9fcd-75a93714c01a.png">
-  <img width="500" alt="image" src="https://user-images.githubusercontent.com/123277348/220214957-d4cf8334-daf2-40ad-bd5c-d721fe65540f.png">
+  <img width="450" alt="image" src="https://user-images.githubusercontent.com/123277348/220214957-d4cf8334-daf2-40ad-bd5c-d721fe65540f.png">
 </p>
 
