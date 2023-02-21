@@ -62,6 +62,7 @@
 ### Known limitations:
 • The name of the columns must be in the first line in each worksheet
 -> Possible solution: add a selector to choose the right title line
+
 • The structure of the worksheet should be as follows: first column identifier, next columns characteristics specific to the identifier.
 
 <i> Please enjoy my work and do not hesitate to send me your feedback </i>
