@@ -29,7 +29,7 @@
   <img width="375" alt="image" src="https://user-images.githubusercontent.com/123277348/220213179-def39970-a86a-46e0-9809-7562e95fa30c.png">
 <p/>
 
-• Add your updates (as many as you want) they will be displayed in green.
+• Add your updates (as many as you want in chronological order of preference) they will be displayed in green.
 <p>
   <img width="375" alt="image" src="https://user-images.githubusercontent.com/123277348/220214108-7220a3f5-9a8f-4476-a669-923239f82920.png">
 <p/>
