@@ -58,3 +58,10 @@
 <p>
   <img width="400" alt="image" src="https://user-images.githubusercontent.com/123277348/220215336-e379d096-e978-4028-82c6-54fe368fc274.png">
 </p>
+
+### Known limitations:
+• The name of the columns must be in the first line in each worksheet
+-> Possible solution: add a selector to choose the right title line
+• The structure of the worksheet should be as follows: first column identifier, next columns characteristics specific to the identifier.
+
+<i> Please enjoy my work and do not hesitate to send me your feedback </i>
