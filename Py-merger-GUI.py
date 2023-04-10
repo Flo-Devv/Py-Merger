@@ -142,69 +142,69 @@ def set_base():
 			selection_keys.remove(base)
 
 def merge_internal_func(old, upt, new_ws):
-    alphabet = [chr(k) for k in range(65, 91)]
-    reorder_rows = lambda sheet: {elem[0]:list(elem[1:]) for elem in list(sheet.values)[1:]} # {A1:[B1, C1...], A2:[B2, C2...]...}
-    reorder_col_names = lambda sheet: {list(sheet.values)[0][k+1]:k for k in range(len(list(sheet.values)[0])-1)}
-    sheet_origin = lambda sheet: list(sheet.values)[0][0]
-    old_rows = reorder_rows(old)
-    old_titles = reorder_col_names(old)
-    upt_rows = reorder_rows(upt)
-    upt_titles = reorder_col_names(upt)
-    new_titles = list(old_titles.keys()) + list(set(upt_titles.keys()) - set(old_titles.keys()))
-    new_titles = {new_titles[k]:k for k in range(len(new_titles))} # anciens titres + les nouveaux
-    for elem in old_rows:
-        while len(old_rows[elem])<len(new_titles):
-            old_rows[elem].append(None)
-    for elem in upt_rows:
-        if elem in old_rows:
-            for title in upt_titles:
-                if isinstance(old_rows[elem][new_titles[title]], int):
-                    if old_rows[elem][new_titles[title]] > upt_rows[elem][upt_titles[title]]:
-                        old_rows[elem][new_titles[title]] = (upt_rows[elem][upt_titles[title]], 0)
-                    elif old_rows[elem][new_titles[title]] < upt_rows[elem][upt_titles[title]]:
-                        old_rows[elem][new_titles[title]] = (upt_rows[elem][upt_titles[title]], 1)
-                    else:
-                        old_rows[elem][new_titles[title]] = upt_rows[elem][upt_titles[title]]
-                else:
-                    old_rows[elem][new_titles[title]] = upt_rows[elem][upt_titles[title]]
-        else:
-            old_rows[elem] = [None for k in range(len(new_titles))]
-            for title in upt_titles:
-                old_rows[elem][new_titles[title]] = upt_rows[elem][upt_titles[title]]
-    # On écrit brut data 0 (Operationnel)
-    for elem in enumerate([sheet_origin(old)] + list(new_titles.keys())): # Ligne des titres
-        index = alphabet[elem[0]] + '1'
-        new_ws[index] = elem[1]
-        new_ws[index].font = Font(bold=True)
-    for idx, key in enumerate(old_rows, 2): 
-        index = 'A' + str(idx)
-        new_ws[index] = key
-        for i in range(len(old_rows[key])): 
-            index = alphabet[i+1] + str(idx)
-            if isinstance(old_rows[key][i], tuple):
-                col = old_rows[key][i][1]
-                new_ws[index] = old_rows[key][i][0]
-                new_ws[index].font = Font(color="2ecc71" if col else 'e74c3c')
-            else:
-                new_ws[index] = old_rows[key][i]
+	alphabet = [chr(k) for k in range(65, 91)]
+	reorder_rows = lambda sheet: {elem[0]:list(elem[1:]) for elem in list(sheet.values)[1:]} # {A1:[B1, C1...], A2:[B2, C2...]...}
+	reorder_col_names = lambda sheet: {list(sheet.values)[0][k+1]:k for k in range(len(list(sheet.values)[0])-1)}
+	sheet_origin = lambda sheet: list(sheet.values)[0][0]
+	old_rows = reorder_rows(old)
+	old_titles = reorder_col_names(old)
+	upt_rows = reorder_rows(upt)
+	upt_titles = reorder_col_names(upt)
+	new_titles = list(old_titles.keys()) + list(set(upt_titles.keys()) - set(old_titles.keys()))
+	new_titles = {new_titles[k]:k for k in range(len(new_titles))} # anciens titres + les nouveaux
+	for elem in old_rows:
+		while len(old_rows[elem])<len(new_titles):
+			old_rows[elem].append(None)
+	for elem in upt_rows:
+		if elem in old_rows:
+			for title in upt_titles:
+				if isinstance(old_rows[elem][new_titles[title]], int):
+					if old_rows[elem][new_titles[title]] > upt_rows[elem][upt_titles[title]]:
+						old_rows[elem][new_titles[title]] = (upt_rows[elem][upt_titles[title]], 0)
+					elif old_rows[elem][new_titles[title]] < upt_rows[elem][upt_titles[title]]:
+						old_rows[elem][new_titles[title]] = (upt_rows[elem][upt_titles[title]], 1)
+					else:
+						old_rows[elem][new_titles[title]] = upt_rows[elem][upt_titles[title]]
+				else:
+					old_rows[elem][new_titles[title]] = upt_rows[elem][upt_titles[title]]
+		else:
+			old_rows[elem] = [None for k in range(len(new_titles))]
+			for title in upt_titles:
+				old_rows[elem][new_titles[title]] = upt_rows[elem][upt_titles[title]]
+	# On écrit brut data 0 (Operationnel)
+	for elem in enumerate([sheet_origin(old)] + list(new_titles.keys())): # Ligne des titres
+		index = alphabet[elem[0]] + '1'
+		new_ws[index] = elem[1]
+		new_ws[index].font = Font(bold=True)
+	for idx, key in enumerate(old_rows, 2): 
+		index = 'A' + str(idx)
+		new_ws[index] = key
+		for i in range(len(old_rows[key])): 
+			index = alphabet[i+1] + str(idx)
+			if isinstance(old_rows[key][i], tuple):
+				col = old_rows[key][i][1]
+				new_ws[index] = old_rows[key][i][0]
+				new_ws[index].font = Font(color="2ecc71" if col else 'e74c3c')
+			else:
+				new_ws[index] = old_rows[key][i]
 
 def merge_action():
-    if not base or len(selection_keys)==0:
-        return ''
-    new_wb = Workbook()
-    new_ws = new_wb.active
-    new_ws.title= 'py_merged'
-    base_ws = worksheets[base]
-    upt_ws = worksheets[selection_keys[0]]
-    merge_internal_func(base_ws, upt_ws, new_ws)
-    for ws in selection_keys[1:]:
-    	upt_ws = worksheets[ws]
-    	merge_internal_func(new_ws, upt_ws, new_ws)
-    new_fn = asksaveasfilename(filetypes=(("Excel File","*.xlsx"),))
-    if new_fn != '':
-        new_fn = new_fn + '.xlsx' if not new_fn.endswith('.xlsx') else new_fn
-        new_wb.save(new_fn)
-        import_wb(new_fn)    
+	if not base or len(selection_keys)==0:
+		return ''
+	new_wb = Workbook()
+	new_ws = new_wb.active
+	new_ws.title= 'py_merged'
+	base_ws = worksheets[base]
+	upt_ws = worksheets[selection_keys[0]]
+	merge_internal_func(base_ws, upt_ws, new_ws)
+	for ws in selection_keys[1:]:
+		upt_ws = worksheets[ws]
+		merge_internal_func(new_ws, upt_ws, new_ws)
+	new_fn = asksaveasfilename(filetypes=(("Excel File","*.xlsx"),))
+	if new_fn != '':
+		new_fn = new_fn + '.xlsx' if not new_fn.endswith('.xlsx') else new_fn
+		new_wb.save(new_fn)
+		import_wb(new_fn)    
 
 for k in range(10):
 	win.rowconfigure(k, weight=1)
